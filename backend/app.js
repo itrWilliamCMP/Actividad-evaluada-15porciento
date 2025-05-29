@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
-import clientsRoutes from "./routes/clients.js";
-import brandsRoutes from "./routes/brands.js";
-import modelsRoutes from "./routes/models.js";
-import employeesRoutes from "./routes/employees.js";
+import clientsRoutes from "./src/routes/clients.js";
+import brandsRoutes from "./src/routes/brands.js";
+import modelsRoutes from "./src/routes/models.js";
+import employeesRoutes from "./src/routes/employees.js";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 
