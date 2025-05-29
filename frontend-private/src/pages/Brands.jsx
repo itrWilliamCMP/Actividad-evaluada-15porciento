@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect} from "react";
 import ListBrands from "../components/Brands/ListBrands";
 import RegisterBrand from "../components/Brands/RegisterBrand";
 import toast, {Toaster} from 'react-hot-toast';
@@ -6,7 +6,7 @@ import toast, {Toaster} from 'react-hot-toast';
 const Brands = () => {
 
   const [activeTab, setActiveTab] = useState("list");
-  const API = "http://localhost:4000/api/brands";
+  const API = "https://actividad-evaluada-15porciento.vercel.app//api/brands";
   const [id, setId] = useState("");
   const [nameBrand, setNameBrand] = useState("");
   const [brands, setBrands] = useState([]);

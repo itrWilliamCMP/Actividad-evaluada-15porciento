@@ -5,7 +5,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const Clients = () => {
   const [activeTab, setActiveTab] = useState("list");
-  const API = "http://localhost:4000/api/clients";
+  const API = "http://https://actividad-evaluada-15porciento-1.onrender.com/api/clients";
   const [id, setId] = useState("");
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");

@@ -13,7 +13,7 @@ const Models = () => {
   const fetchModels = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:4000/api/models");
+      const response = await fetch("https://actividad-evaluada-15porciento.vercel.app//api/models");
       if (!response.ok) throw new Error("Error al obtener los modelos");
       const data = await response.json();
       setModels(data);
@@ -36,7 +36,7 @@ const Models = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:4000/api/models", {
+      const response = await fetch("https://actividad-evaluada-15porciento.vercel.app//api/models", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: modelName }),
@@ -53,7 +53,7 @@ const Models = () => {
 
   const deleteModel = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/models/${id}`, {
+      const response = await fetch(`https://actividad-evaluada-15porciento.vercel.app/api/models/${id}`, {
         method: "DELETE",
       });
       if (!response.ok) throw new Error("Error al eliminar el modelo");
@@ -77,7 +77,7 @@ const Models = () => {
       return;
     }
     try {
-      const response = await fetch(`http://localhost:4000/api/models/${id}`, {
+      const response = await fetch(`https://actividad-evaluada-15porciento.vercel.app/api/models/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: modelName }),

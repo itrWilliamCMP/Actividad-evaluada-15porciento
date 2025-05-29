@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "http:https://actividad-evaluada-15porciento.vercel.app",
     credentials: true,
   })
 );
