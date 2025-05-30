@@ -6,7 +6,7 @@ import toast, {Toaster} from 'react-hot-toast';
 const Brands = () => {
 
   const [activeTab, setActiveTab] = useState("list");
-  const API = "https://actividad-evaluada-15porciento.vercel.app//api/brands";
+  const API = "https://actividad-evaluada-15porciento-1.onrender.com/api/brands";
   const [id, setId] = useState("");
   const [nameBrand, setNameBrand] = useState("");
   const [brands, setBrands] = useState([]);

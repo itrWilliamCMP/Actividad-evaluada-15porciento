@@ -13,12 +13,12 @@ const Dashboard = () => {
   const fetchData = async () => {
     try {
       const employeesResponse = await fetch(
-        "https://actividad-evaluada-15porciento.vercel.app//api/employees"
+        "https://actividad-evaluada-15porciento-1.onrender.com/api/employees"
       );
-      const brandsResponse = await fetch("https://actividad-evaluada-15porciento.vercel.app//api/brands");
-      const modelsResponse = await fetch("https://actividad-evaluada-15porciento.vercel.app//api/models");
+      const brandsResponse = await fetch("https://actividad-evaluada-15porciento-1.onrender.com/api/brands");
+      const modelsResponse = await fetch("https://actividad-evaluada-15porciento-1.onrender.com/api/models");
       const clientsResponse = await fetch(
-        "https://actividad-evaluada-15porciento.vercel.app//api/clients"
+        "https://actividad-evaluada-15porciento-1.onrender.com/api/clients"
       );
 
       const employeesData = await employeesResponse.json();
